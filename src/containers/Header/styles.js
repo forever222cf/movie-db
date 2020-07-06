@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { color } from '../../../styles/colorSchema';
+import { color } from './../../styles/colorSchema';
 
 export const StyledHeader = styled.header`
   padding: 0.5rem 4rem;

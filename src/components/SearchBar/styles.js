@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { color } from './../../../styles/colorSchema';
+import { color } from './../../styles/colorSchema';
 
 export const StyledSearchBar = styled.div`
 `;

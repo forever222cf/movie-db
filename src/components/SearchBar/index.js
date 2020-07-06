@@ -4,10 +4,14 @@ import {
   StyledInput
 } from './styles';
 
-export default function SearchBar() {
+export default function SearchBar({ searchQuery, handleChangeInput, handleKeyUp }) {
   return (
     <StyledSearchBar>
-      <StyledInput placeholder="Search Movie" />
+      <StyledInput
+        value={searchQuery}
+        onChange={handleChangeInput}
+        onKeyUp={handleKeyUp}
+        placeholder="Search Movie" />
     </StyledSearchBar>
-  )
+  );
 }

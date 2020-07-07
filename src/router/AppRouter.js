@@ -14,7 +14,7 @@ export const routes = [
   {
     name: 'detail',
     label: 'Detail',
-    path: '/:id',
+    path: '/:movieId',
     exact: false,
     component: MovieDetail
   }

@@ -8,9 +8,11 @@ import SearchBar from '../../components/SearchBar';
 import Logo from '../../components/Logo';
 import { useDispatch, useSelector } from 'react-redux';
 import { updateSearchQuery, fetchMovieList } from '../App/actions';
+import { useHistory } from 'react-router-dom';
 
 export default function Header() {
   const searchQuery = useSelector(state => state.movies.searchQuery);
+  const history = useHistory();
 
   const dispatch = useDispatch();
 
@@ -26,10 +28,14 @@ export default function Header() {
     }
   }
 
+  const handleClickLogo = () => {
+    history.push('');
+  }
+
   return (
     <StyledHeader>
       <StyledLogoWrapper>
-        <Logo />
+        <Logo handleClick={handleClickLogo} />
       </StyledLogoWrapper>
       <StyledSearchBarWrapper>
         <SearchBar

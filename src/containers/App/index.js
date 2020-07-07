@@ -10,13 +10,14 @@ import Header from '../Header';
 import AppRouter from '../../router/AppRouter';
 
 export default function App() {
+
   return (
     <StyledApp>
       <Router>
         <Header />
-        <StyledAppContent>
-          <AppRouter />
-        </StyledAppContent>
+          <StyledAppContent>
+            <AppRouter />
+          </StyledAppContent>
       </Router>
     </StyledApp>
   );

@@ -7,8 +7,9 @@ export const StyledCard = styled.div`
   text-align: center;
   color: ${color.WHITE};
   transition: all 0.3s ease;
+
   &:hover {
-    color: ${color.LIGHT_BLUE}
+    color: ${color.LIGHT_BLUE};
   }
 `;
 
@@ -17,6 +18,11 @@ export const StyledThumbnailWrapper = styled.div`
   justify-content: center;
   align-items: center;
   height: 25rem;
+  transition: all 0.3s ease;
+
+  ${StyledCard}:hover & {
+    transform: translateY(-15px);
+  }
 `;
 
 export const StyledThumbnail = styled.img`

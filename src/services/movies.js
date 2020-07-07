@@ -6,3 +6,9 @@ export const fetchMovies = searchQuery => {
     url: `${env.BASE_URL}/${env.API.SEARCH}/${searchQuery}`
   });
 }
+
+export const fetchMovie = movieId => {
+  return api.get({
+    url: `${env.BASE_URL}/${env.API.DETAIL}/${movieId}`
+  });
+}

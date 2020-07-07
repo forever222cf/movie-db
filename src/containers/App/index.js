@@ -1,6 +1,7 @@
 import React from 'react';
 import {
-  StyledApp
+  StyledApp,
+  StyledAppContent
 } from './styles';
 import {
   BrowserRouter as Router
@@ -13,7 +14,9 @@ export default function App() {
     <StyledApp>
       <Router>
         <Header />
-        <AppRouter />
+        <StyledAppContent>
+          <AppRouter />
+        </StyledAppContent>
       </Router>
     </StyledApp>
   );
